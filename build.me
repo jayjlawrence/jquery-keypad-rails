@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+rm -rf vendor/assets/stylesheets/*
+rm -rf vendor/assets/javascripts/*
+rm -rf vendor/assets/images/*
+
+cp build/*.css vendor/assets/stylesheets
+cp build/*.js vendor/assets/javascripts
+cp build/*.png vendor/assets/images
+
+gem update --system
+gem build jquery-keypad-rails.gemspec
+# gem push jquery-keypad-rails-1.5.1.gem
+

@@ -1,0 +1,15 @@
+# ./build.me
+rm -rf jquery-keypad-rails-test
+rails new jquery-keypad-rails-test
+cd jquery-keypad-rails-test
+rails generate scaffold tester
+rake db:migrate
+echo 'gem "jquery-keypad-rails", :path => ".."' >> Gemfile
+bundle install
+echo '//= require jquery.keypad.min' >> app/assets/javascripts/application.js
+echo '//= require jquery.keypad' >> app/assets/stylesheets/application.css
+cp ../tester.html app/views/testers/index.html.erb
+
+(sleep 5; open http://localhost:3000/testers) &
+rails server
+
