@@ -1,4 +1,6 @@
-Copyright (c) 2013 Jay Lawrence
+jQuery Keypad is available under the MIT License. Please see http://keith-wood.name/keypad.html
+
+jquery-keypad-rails, packaging of jQuery Keypad by Keith Wood is Copyright (c) 2013 Jay Lawrence
 
 MIT License
 
