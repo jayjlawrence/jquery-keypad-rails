@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Jquery::Keypad::Rails::VERSION
   spec.authors       = ["Jay Lawrence"]
   spec.email         = ["jay@patientway.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Simple packaging of assets from http://keith-wood.name/keypad.html}
+  spec.summary       = %q{Assets for jQuery Keypad by Keith Wood}
+  spec.homepage      = "http://keith-wood.name/keypad.html"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

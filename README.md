@@ -1,6 +1,8 @@
 # Jquery::Keypad::Rails
 
-TODO: Write a gem description
+Simple packaging of the jQuery Keypad assets in a gem. See http://keith-wood.name/keypad.html
+
+Thanks Keith.
 
 ## Installation
 
@@ -18,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+No helpers at this time, maybe in the future or from a contributor?
 
 ## Contributing
 
