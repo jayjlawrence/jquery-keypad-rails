@@ -1,5 +1,12 @@
 #!/bin/bash 
 
+VER=1.4.2
+
+rm build/*
+pushd build
+unzip ../jquery.keypad.package-${VER}.zip
+popd
+
 rm -rf vendor/assets/stylesheets/*
 rm -rf vendor/assets/javascripts/*
 rm -rf vendor/assets/images/*
@@ -8,7 +15,17 @@ cp build/*.css vendor/assets/stylesheets
 cp build/*.js vendor/assets/javascripts
 cp build/*.png vendor/assets/images
 
+cat >lib/jquery/keypad/rails/version.rb <<EOF
+module Jquery
+  module Keypad
+    module Rails
+      VERSION = "${VER}"
+    end
+  end
+end
+EOF
+
 gem update --system
 gem build jquery-keypad-rails.gemspec
-# gem push jquery-keypad-rails-1.5.1.gem
+# gem push jquery-keypad-rails-${VER}.gem
 
