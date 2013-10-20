@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-VER=1.4.2
+VER=1.5.0
 
 rm build/*
 pushd build
@@ -27,5 +27,5 @@ EOF
 
 gem update --system
 gem build jquery-keypad-rails.gemspec
-# gem push jquery-keypad-rails-${VER}.gem
+gem push jquery-keypad-rails-${VER}.gem
 
