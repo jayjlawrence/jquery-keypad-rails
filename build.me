@@ -1,6 +1,7 @@
 #!/bin/bash 
 
-VER=1.5.1
+VER=1.4.2
+REV=.1
 
 rm build/*
 pushd build
@@ -19,7 +20,7 @@ cat >lib/jquery/keypad/rails/version.rb <<EOF
 module Jquery
   module Keypad
     module Rails
-      VERSION = "${VER}"
+      VERSION = "${VER}${REV}"
     end
   end
 end
@@ -27,5 +28,5 @@ EOF
 
 gem update --system
 gem build jquery-keypad-rails.gemspec
-gem push jquery-keypad-rails-${VER}.gem
+# gem push jquery-keypad-rails-${VER}.gem
 
