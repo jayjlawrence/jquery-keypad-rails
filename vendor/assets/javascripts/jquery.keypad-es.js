@@ -2,7 +2,7 @@
    Spanish initialisation for the jQuery keypad extension
    Written by Cristhian Benitez (cbenitez@gmail.com). */
 (function($) { // hide the namespace
-	$.keypad.regional['es'] = {
+	$.keypad.regionalOptions['es'] = {
 		buttonText: '...', buttonStatus: 'Abrir el teclado',
 		closeText: 'Cerrar', closeStatus: 'Cerrar el teclado',
 		clearText: 'Limpiar', clearStatus: 'Eliminar todo el texto',
@@ -15,6 +15,7 @@
 		fullLayout: $.keypad.qwertyLayout,
 		isAlphabetic: $.keypad.isAlphabetic,
 		isNumeric: $.keypad.isNumeric,
+		toUpper: $.keypad.toUpper,
 		isRTL: false};
-	$.keypad.setDefaults($.keypad.regional['es']);
+	$.keypad.setDefaults($.keypad.regionalOptions['es']);
 })(jQuery);

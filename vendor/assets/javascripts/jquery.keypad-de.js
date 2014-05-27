@@ -16,7 +16,7 @@
 		$.keypad.SHIFT + $.keypad.SPACE + $.keypad.SPACE_BAR +
 		$.keypad.SPACE + $.keypad.SPACE + $.keypad.SPACE + $.keypad.CLEAR +
 		$.keypad.SPACE + $.keypad.SPACE + $.keypad.HALF_SPACE + $.keypad.CLOSE];
-	$.keypad.regional['de'] = {
+	$.keypad.regionalOptions['de'] = {
 		buttonText: '...', buttonStatus: 'Öffnen',
 		closeText: 'schließen', closeStatus: 'schließen',
 		clearText: 'löschen', clearStatus: 'Gesamten Inhalt löschen',
@@ -29,7 +29,8 @@
 		fullLayout: $.keypad.qwertzLayout,
 		isAlphabetic: $.keypad.isAlphabetic,
 		isNumeric: $.keypad.isNumeric,
+		toUpper: $.keypad.toUpper,
 		isRTL: false};
-	$.keypad.setDefaults($.keypad.regional['de']);
+	$.keypad.setDefaults($.keypad.regionalOptions['de']);
 
 })(jQuery);

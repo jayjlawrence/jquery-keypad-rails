@@ -2,7 +2,7 @@
    Italian initialisation for the jQuery keypad extension
    Written by Francesco Strappini (www.strx.it). */
 (function($) { // hide the namespace
-	$.keypad.regional['it'] = {
+	$.keypad.regionalOptions['it'] = {
 		buttonText: '...', buttonStatus: 'Visualizza Tastiera',
 		closeText: 'Chiudi', closeStatus: 'Nascondi Tastiera',
 		clearText: 'Pulisci', clearStatus: 'Elimina il Testo',
@@ -15,6 +15,7 @@
 		fullLayout: $.keypad.qwertyLayout,
 		isAlphabetic: $.keypad.isAlphabetic,
 		isNumeric: $.keypad.isNumeric,
+		toUpper: $.keypad.toUpper,
 		isRTL: false};
-	$.keypad.setDefaults($.keypad.regional['it']);
+	$.keypad.setDefaults($.keypad.regionalOptions['it']);
 })(jQuery);
